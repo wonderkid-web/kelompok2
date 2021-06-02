@@ -22,8 +22,9 @@ body{
 .waves h1{
 	text-align: center;
 	margin: 0 auto;
-	font-size: clamp(20px, 5em, 7em);
+	font-size: clamp(20px, 4em, 7em);
 	text-shadow: 5px 0 2px rgba(0,0,0,.1);
+	width: max-content;
 }
 .waves p{
 	font-size: clamp(15px, 1.5em, 5em);
