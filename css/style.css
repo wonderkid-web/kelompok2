@@ -20,6 +20,7 @@ body{
 	place-items: center;
 }
 .waves h1{
+	text-align: center;
 	margin: 0 auto;
 	font-size: clamp(20px, 5em, 7em);
 	text-shadow: 5px 0 2px rgba(0,0,0,.1);
@@ -83,6 +84,7 @@ button:hover span:after{
 	margin: auto;
 	margin-top: -90px;
 	margin-bottom: 70px;
+	text-align: center;
 }
 .section-2 .cards{
 	margin: auto;
@@ -168,13 +170,7 @@ button:hover span:after{
 		background-repeat: no-repeat;
 		background-position: 0 0;
 	}
-	.card.fifi-img{
-		background-position: 0 -120px;
-	}
-	.card.nurul-img{
-		background-position: 0 -150px;
-	}
-	.card.weni-img{
-		background-position: 0 -150px;
+	.card.wahyu-img{
+		background-position: -70px 0;
 	}
 }
