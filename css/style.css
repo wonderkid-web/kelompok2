@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+:root{
+	--mainFont : 'Pattaya', sans-serif;
+	--border : 5px solid #ffd700;
+}
+html{
+	scroll-behavior: smooth;
+}
+.map{
+	width: 100%;
+	height: 300px;
+}
+body{
+	margin: 0;
+	font-family: var(--mainFont);
+}
+.waves{
+	display: grid;
+	place-items: center;
+}
+.waves h1{
+	margin: 0 auto;
+	font-size: clamp(20px, 5em, 7em);
+	text-shadow: 5px 0 2px rgba(0,0,0,.1);
+}
+.waves p{
+	font-size: clamp(15px, 1.5em, 5em);
+	font-family: sans-serif;
+}
+.svg-2{
+	background-image: radial-gradient(black 10%, transparent 1px);
+	background-size: 70px 70px;
+}
+.waves button{
+	width: 180px;
+	margin-top: 10px;
+	font-size: 1.2em;
+	border-radius: 5px;
+	background: white;
+	border: var(--border);
+	color: black;
+	padding: 10px 25px;
+	font-family: 'Raleway', sans-serif;
+	font-style: bold;
+	cursor: pointer;
+	transition: all .5s ease;
+	position: relative;
+}
+.waves button:hover{
+	box-shadow: 0 0 5px rgba(0,0,0,.3);
+}
+.waves button span{
+	transition: .5s ease;
+}
+.waves button span a{
+	text-decoration: none;
+}
+.waves button span:after{
+	content: '\00bb';
+	display: block;
+	position: absolute;
+	opacity: 0;
+	top: 9px;
+	right: -3px;
+	transition: 0.5s ease;
+}
+button:hover span{
+	padding-right: 25px;
+}
+button:hover span:after{
+	opacity: 1;
+	right: 10px;
+}
+
+.section-2 .member{
+	width: 150px;
+	padding: 10px;
+	font-size: clamp(20px, 2em, 7em);
+	border-radius: 5px;
+	box-shadow: 0 3px 8px rgba(0,0,0,.3);
+	border: var(--border);
+	margin: auto;
+	margin-top: -90px;
+	margin-bottom: 70px;
+}
+.section-2 .cards{
+	margin: auto;
+	width: 88%;
+	height: 450px;
+	display: grid;
+	grid-template-columns:  repeat(5, 1fr);
+	/*border: 3px solid black;*/
+}
+.section-2 .card{
+	margin: 15px;
+	display: flex;
+	border-radius: 10px;
+	overflow: hidden;
+	transition: .5s ease;
+	cursor: pointer;
+	transition: 1s;
+}
+.section-2 .card:nth-child(1), .section-2 .card:nth-child(5){
+	box-shadow: 0 10px 15px rgba(0,0,0,.3);
+	margin: 0 -15px;
+	transform: scale(.80);
+}
+.section-2 .card:nth-child(2), .section-2 .card:nth-child(4){
+	box-shadow: 0 10px 15px rgba(0,0,0,.5);
+	transform: scale(.95);
+}
+.section-2 .card:nth-child(3){
+	box-shadow: 0 10px 15px rgba(0,0,0,.7);
+	transform: scale(1.05);
+}
+.section-2 .card .img {
+	display: block;
+	height: 100%;
+	border-bottom: 5px solid white;
+}
+.card:nth-child(1){
+	background-image: url('../img/anggell.jpg');
+	background-size: cover;
+	background-position: -50px 0;
+}
+.card:nth-child(2){
+	background-image: url('../img/fifi.jpeg');
+	background-size: cover;
+	background-position: 0 -45px;
+}
+.card:nth-child(3){
+	background-image: url('../img/wahyu.jpg');
+	background-size: cover;
+	background-position: -90px 0;
+}
+.card:nth-child(4){
+	background-image: url('../img/nurul.jpeg');
+	background-size: cover;
+}
+.card:nth-child(5){
+	background-image: url('../img/weni.jpg');
+	background-size: cover;
+	background-position: 0 0;
+}
+.section-2 .click{
+	width: max-content;
+	padding: 10px;
+	margin: auto;
+	margin-top: 35px;
+	font-family: sans-serif;
+	font-size: clamp(20px, 1.2em, 7em);
+	cursor: default;	
+}
+
+/*Responsive Card*/
+@media( max-width: 1000px){
+	.section-2 .member{
+		margin-top: 0px;
+	}
+	.section-2 .cards{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: repeat(5, 1fr);
+	}
+	.section-2 .card{
+		height: 300px;
+		background-repeat: no-repeat;
+		background-position: 0 0;
+	}
+	.card.fifi-img{
+		background-position: 0 -120px;
+	}
+	.card.nurul-img{
+		background-position: 0 -150px;
+	}
+	.card.weni-img{
+		background-position: 0 -150px;
+	}
+}

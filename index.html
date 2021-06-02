@@ -1,0 +1,185 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Our Biography</title>
+	<link rel="stylesheet" href="css/style.css">
+  <script src="https://kit.fontawesome.com/58daf71a1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div class="section-1">
+   <div class="waves">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-2"><path fill="#ffd700" fill-opacity="1" d="M0,192L40,186.7C80,181,160,171,240,149.3C320,128,400,96,480,101.3C560,107,640,149,720,170.7C800,192,880,192,960,170.7C1040,149,1120,107,1200,85.3C1280,64,1360,64,1400,64L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+   <h1>Our Biography</h1>
+   <p>with API google map</p>
+   <button><span><a href="#section-2">Check Us!</a></span></button>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="svg-2"><path fill="#ffd700" fill-opacity="1" d="M0,192L40,186.7C80,181,160,171,240,149.3C320,128,400,96,480,101.3C560,107,640,149,720,170.7C800,192,880,192,960,170.7C1040,149,1120,107,1200,85.3C1280,64,1360,64,1400,64L1440,64L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" ><path fill="#ffd700" fill-opacity="1" d="M0,192L40,186.7C80,181,160,171,240,149.3C320,128,400,96,480,101.3C560,107,640,149,720,170.7C800,192,880,192,960,170.7C1040,149,1120,107,1200,85.3C1280,64,1360,64,1400,64L1440,64L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"></path></svg>
+  </div>
+</div>
+
+<div class="section-2" id="section-2">
+  <h1 align="center" class="member">Member</h1>
+
+  <div class="cards">
+
+    <div class="card anggell-img">
+      <a href="#anggel">  
+        <div class="img"></div>
+      </a>
+    </div>
+
+    <div class="card fifi-img">
+      <a href="#fifi">
+        <div class="img"></div>
+      </a>
+    </div>
+
+    <div class="card wahyu-img">
+      <a href="#wahyu">
+        <div class="img"></div>
+      </a>
+    </div>
+
+    <div class="card nurul-img">
+      <a href="#nurul">
+        <div class="img"></div>
+      </a>
+    </div>
+
+    <div class="card weni-img">
+      <a href="#weni">
+        <div class="img"></div>
+      </a>
+    </div>
+
+  </div>
+
+  <!--  <h1 align="center" class="click">
+    <u>
+      You can click one of our picture to go directly to the our biography
+    </u>
+   </h1> -->
+</div>
+
+<div class="section-3">
+  <div class="bio-wahyu">
+    <div class="img-bio"></div>
+    <div class="tb-wahyu"></div>
+  </div>
+  <div class="bio-anggel">
+    <div class="img-bio"></div>
+    <div class="tb-anggek"></div>
+  </div>
+  <div class="bio-fifi">
+    <div class="img-bio"></div>
+    <div class="tb-fifi"></div>
+  </div>
+  <div class="bio-nurul">
+    <div class="img-bio"></div>
+    <div class="tb-nurul"></div>
+  </div>
+  <div class="bio-weni">
+    <div class="img-bio"></div>
+    <div class="tb-weni"></div>
+  </div>
+</div>
+
+
+<script>
+      // Initialize and add the map
+      function initMap() {
+        // wahyu
+        const wahyu = { lat: 3.600856, lng: 98.547295 };
+        let map = new google.maps.Map(document.querySelector(".map-wahyu"), {
+          zoom: 15,
+          center: wahyu,
+        });
+        let marker = new google.maps.Marker({
+          position: wahyu,
+          map: map,
+        });
+
+        // Anggel
+        const anggel = { lat: 3.623680, lng: 98.499640 };
+        let map2 = new google.maps.Map(document.querySelector('.map-anggel'),{
+          zoom: 15,
+          center: anggel,
+        });
+        let marker2 = new google.maps.Marker({
+          position: anggel,
+          map: map2,
+        });
+
+
+        // fifi
+        const fifi = { lat: 3.623680, lng: 98.499640 };
+        let map3 = new google.maps.Map(document.querySelector('.map-fifi'),{
+          zoom: 15,
+          center: fifi
+        });
+        let marker3 = new google.maps.Marker({
+          position: fifi,
+          map: map3
+        });
+
+        // nurul
+        const nurul = { lat: 3.623680, lng: 98.499640 };
+        let map4 = new google.maps.Map(document.querySelector('.map-nurul'),{
+          zoom: 15,
+          center: nurul
+        });
+        let marker4 = new google.maps.Marker({
+          position: nurul,
+          map: map4
+        });
+
+        const weni = { lat: 3.623680, lng: 98.499640 };
+        let map5 = new google.maps.Map(document.querySelector('.map-weni'),{
+          zoom: 15,
+          center: weni
+        });
+        let marker5 = new google.maps.Marker({
+          position: weni,
+          map: map5
+        });
+
+      }
+</script>
+<script src="javascript/script.js"></script>
+ <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBEth_KZh5XGi59p0D924BNpRJaiHIQerg&callback=initMap&libraries=&v=weekly"
+      async
+    ></script>
+
+</body>
+</html>
+<!--  <br>
+          <div class="map map-wahyu"></div>
+          <br>
+          <div class="map map-fifi"></div>
+          <br>
+          <div class="map map-nurul"></div>
+          <br>
+          <div class="map map-weni"></div> -->
+
+         <!--  <ul class="icon">
+          <li>
+            <a href=" https://www.facebook.com/deajin.mexico7">
+              <i class="fab fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://instagram.com/_wahyu21/">
+              <i class="fab fa-instagram-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="https://youtube.com/channel/UCJ-ac7SAu0DDyKCYcwQaYAQ">
+              <i class="fab fa-youtube-square"></i>
+            </a>
+          </li>
+        </ul> -->
