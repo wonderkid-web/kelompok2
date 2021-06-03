@@ -1,2 +1,2 @@
-const wahyu = document.querySelector('.wahyu-img');
+const wahyu = document.querySelector('.cards a');
 console.log(wahyu);

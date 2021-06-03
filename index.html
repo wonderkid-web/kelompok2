@@ -26,9 +26,7 @@
   <div class="cards">
 
     <div class="card anggell-img">
-      <a href="#anggel">  
-        <div class="img"></div>
-      </a>
+      <a href="#anggel"></a>
     </div>
 
     <div class="card fifi-img">
@@ -57,36 +55,103 @@
 
   </div>
 
-  <!--  <h1 align="center" class="click">
-    <u>
-      You can click one of our picture to go directly to the our biography
-    </u>
-   </h1> -->
+  <div class="intro">
+    <h1 align="center" class="click">Intro</h1>
+    <p>
+      Ini adalah website kami, yaitu website yang menampilkan biography dari Anggota kelompok 3. Tentu nya sudah ter-integrasi dengan salah satu Google API, pada V.1.0 ini, Kami hanya menggunakan API Google Maps, tak menutup kemungkinan bagi kami, jika kedepannya akan kami beri fasilitas lebih pada Website ini
+    </p>
+  </div>
+   
 </div>
 
 <div class="section-3">
-  <div class="bio-wahyu">
-    <div class="img-bio"></div>
-    <div class="tb-wahyu"></div>
+  <div class="biography bio-wahyu">
+    <div class="left img-bio-wahyu"></div>
+    <div class="right bio b-wahyu">
+      <h1 align="center">Biography</h1>
+      <div class="f-r">
+        <ul>
+          <li>Nama: Muhammad Wahyu Ramadhan</li>
+          <li>NPM: 1914370556</li>
+          <li>Alamat: Jl. Medan-Binjai Km. 15.7,
+            <div class="map map-wahyu"></div>
+          </li>
+          <li>"
+            apapun yang engkau coba, sejatinya tak akan pernah gagal. Karna jikalau pun engkau gagal, kau telah gagal disana bukan disini
+          "</li>
+        </ul>
+      </div>
+      
+    </div>
   </div>
-  <div class="bio-anggel">
-    <div class="img-bio"></div>
-    <div class="tb-anggek"></div>
+  <div class="biography bio-anggel">
+    <div class="left img-bio-anggel"></div>
+    <div class="right bio b-anggel">
+      <h1 align="center">Biography</h1>
+      <ul>
+        <li>Nama: Anggel Laura Sijabat</li>
+        <li>NPM: 1914370537</li>
+        <li>Alamat: jl.Seroja no 4, pahlawan, Binjai Utara
+          <div class="map map-anggel"></div>
+        </li>
+        <li>
+          " Proses tidak akan mengkhianati hasil 
+            Awal menyakitkan akan tergantikan dengan akhir yang memuaskan."
+        </li>   
+      </ul>
+    </div>
   </div>
-  <div class="bio-fifi">
-    <div class="img-bio"></div>
-    <div class="tb-fifi"></div>
+  <div class="biography bio-fifi">
+    <div class="left img-bio-fifi"></div>
+    <div class="right bio b-fifi">
+      <h1 align="center">Biography</h1>
+      <ul>
+        <li>Nama: Rizki Fitria</li>
+        <li>NPM: 1914370287</li>
+        <li>Alamat:  jln.amal lingk XVI Kwala bingai stabat
+          <div class="map map-fifi"></div>
+        </li>
+        <li>
+          "Kita memiliki beberapa banyak alasan kegagalan, tetapi tidak ada satu alasan pun untuk menyerah."
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="bio-nurul">
-    <div class="img-bio"></div>
-    <div class="tb-nurul"></div>
+  <div class="biography bio-nurul">
+    <div class="left img-bio-nurul"></div>
+    <div class="right bio b-nurul">
+      <h1 align="center">Biography</h1>
+      <ul>
+        <li>Nama: Nurul Hidayani</li>
+        <li>NPM: 1914370545</li>
+        <li>Alamat: Pasar Bilah 2B, kecamatan kualuh Hilir
+          <div class="map map-nurul"></div>
+        </li>
+        <li>
+          "Hidup itu bagaikan uap....
+          Yang tampak sejenak lalu menghilang....
+          Percayalah bahwa rencana Allah adalah yang paling sempurna.."
+        </li>
+      </ul>
+    </div>
   </div>
-  <div class="bio-weni">
-    <div class="img-bio"></div>
-    <div class="tb-weni"></div>
+  <div class="biography bio-weni">
+    <div class="left img-bio-weni"></div>
+    <div class="right bio b-weni">
+      <h1 align="center">Biography</h1>
+      <ul>
+        <li>Nama: Weni Rahayu</li>
+        <li>NPM: 1914370526</li>
+        <li>Alamat: Bulu Cina
+          <div class="map map-weni"></div>
+        </li>
+        <li>
+          "Sering kali setiap orang berpikir untuk mengubah dunia, namun tidak ada yang berpikir untuk mengubah dirinya sendiri."
+        </li>
+      </ul>
+    </div>
   </div>
 </div>
-
 
 <script>
       // Initialize and add the map
@@ -115,7 +180,7 @@
 
 
         // fifi
-        const fifi = { lat: 3.623680, lng: 98.499640 };
+        const fifi = { lat: 5.284080, lng: 103.115750 };
         let map3 = new google.maps.Map(document.querySelector('.map-fifi'),{
           zoom: 15,
           center: fifi
@@ -126,7 +191,7 @@
         });
 
         // nurul
-        const nurul = { lat: 3.623680, lng: 98.499640 };
+        const nurul = { lat: 4.025590, lng: 101.018600 };
         let map4 = new google.maps.Map(document.querySelector('.map-nurul'),{
           zoom: 15,
           center: nurul
@@ -136,7 +201,7 @@
           map: map4
         });
 
-        const weni = { lat: 3.623680, lng: 98.499640 };
+        const weni = { lat: 3.738110, lng: 98.546280 };
         let map5 = new google.maps.Map(document.querySelector('.map-weni'),{
           zoom: 15,
           center: weni
@@ -158,13 +223,7 @@
 </body>
 </html>
 <!--  <br>
-          <div class="map map-wahyu"></div>
-          <br>
-          <div class="map map-fifi"></div>
-          <br>
-          <div class="map map-nurul"></div>
-          <br>
-          <div class="map map-weni"></div> -->
+          -->
 
          <!--  <ul class="icon">
           <li>
